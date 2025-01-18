@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@v2
       - run: docker build -t cygnetops/react-test -f Dockerfile.dev .
       - run: docker run -e CI=true cygnetops/react-test npm test
-  generate-zip-file:
+
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
-  deploy:
+
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         with:
