@@ -20,7 +20,7 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v18
         with:
           application_name: frontend
-          environment_name: Frontend-env
+          environment_name: Frontend-env-dev
           existing_bucket_name: elasticbeanstalk-eu-north-1-557690621501
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
