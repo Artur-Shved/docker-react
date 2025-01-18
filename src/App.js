@@ -5,8 +5,8 @@ import HelloWorld from './hello-world'
 function App() {
   return (
     <div className="App">
-      <HelloWorld/>
       <header className="App-header">
+          <HelloWorld/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello
